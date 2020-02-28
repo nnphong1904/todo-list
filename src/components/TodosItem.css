@@ -1,0 +1,40 @@
+.TodoItem{
+    font-family: 'Neucha',cursive, Arial;
+    font-weight: 300;
+    font-size: 24px;
+    color: #4d4d4d;
+    transition: all 0.4s;
+    display: flex;  
+    border-bottom: solid 1px #4d4d4d2e;
+    position: relative;
+}
+.TodoItem >#clear-btn{
+     position: absolute;
+     right: 0;
+     top: 50%;
+     margin-top: -5px;
+     right: 15px;
+     opacity: 0;
+     
+}
+.TodoItem:hover >#clear-btn{
+    opacity: 1;
+}
+.TodoItem >img{
+    margin:0 5px 0 5px;
+}
+.TodoItem:last-child { 
+    border-bottom: none;
+    
+}
+.TodoItem >p{
+    margin: 0;
+    padding: 10px 5px;
+    
+}
+
+
+.TodoItem-complete{
+    text-decoration: line-through;
+   color: #4d4d4d40;
+}
